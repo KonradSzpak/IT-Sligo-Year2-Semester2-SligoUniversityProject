@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sligoUniversityProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+        <ListBox x:Name="lbPeople" HorizontalAlignment="Left" Height="271" Margin="19,137,0,0" VerticalAlignment="Top" Width="284"/>
+        <Label Content="Sligo University" HorizontalAlignment="Left" Margin="19,92,0,0" VerticalAlignment="Top" Height="37" FontSize="20" FontWeight="Bold" Width="205"/>
+        <ComboBox x:Name="cmbPersonType" HorizontalAlignment="Left" Margin="19,62,0,0" VerticalAlignment="Top" Width="155" Height="22"/>
+        <Label Content="ID Number" HorizontalAlignment="Left" Margin="312,148,0,0" VerticalAlignment="Top" Height="23" FontWeight="Bold" Width="111"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="312,175,0,0" VerticalAlignment="Top" Width="108" Height="27" FontWeight="Bold"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="312,231,0,0" VerticalAlignment="Top" Height="23" FontWeight="Bold" Width="108"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="312,287,0,0" VerticalAlignment="Top" Height="24" FontWeight="Bold" Width="64"/>
+        <Label Content="Phone Number" HorizontalAlignment="Left" Margin="312,315,0,0" VerticalAlignment="Top" Height="24" FontWeight="Bold" Width="147"/>
+        <Label Content="Middle Name" HorizontalAlignment="Left" Margin="312,202,0,0" VerticalAlignment="Top" Height="24" FontWeight="Bold" Width="133"/>
+        <Label Content="Course ID" HorizontalAlignment="Left" Margin="312,343,0,0" VerticalAlignment="Top" Height="24" FontWeight="Bold" Width="102"/>
+        <CheckBox x:Name="cbOnline" Content="Online" HorizontalAlignment="Left" Margin="241,17,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="15" Width="74"/>
+        <Label Content="Person Type" HorizontalAlignment="Left" Margin="19,37,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="25" Width="101"/>
+        <TextBox x:Name="tbIdNumber" HorizontalAlignment="Left" Height="20" Margin="471,151,0,0" TextWrapping="Wrap" Text="ID Number" VerticalAlignment="Top" Width="185" FontStyle="Italic"/>
+        <TextBox x:Name="tbFirstName" HorizontalAlignment="Left" Height="19" Margin="471,179,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="185" FontStyle="Italic"/>
+        <TextBox x:Name="tbMiddleName" HorizontalAlignment="Left" Height="19" Margin="471,207,0,0" TextWrapping="Wrap" Text="Middle Name" VerticalAlignment="Top" Width="185" FontStyle="Italic"/>
+        <TextBox x:Name="tbLastName" HorizontalAlignment="Left" Height="19" Margin="471,235,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="185" FontStyle="Italic"/>
+        <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Height="19" Margin="471,291,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="185" FontStyle="Italic"/>
+        <TextBox x:Name="tbCourrseId" HorizontalAlignment="Left" Height="20" Margin="471,347,0,0" TextWrapping="Wrap" Text="Course ID" VerticalAlignment="Top" Width="185" FontStyle="Italic"/>
+        <TextBox x:Name="tbPhoneNumber" HorizontalAlignment="Left" Height="18" Margin="471,320,0,0" TextWrapping="Wrap" Text="Phone Number" VerticalAlignment="Top" Width="185" FontStyle="Italic"/>
+        <Label Content="Personal Information" HorizontalAlignment="Left" Margin="358,100,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Height="37" Width="323"/>
+        <Label Content="Date of Birth" HorizontalAlignment="Left" Margin="312,259,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="tbDateOfBirth" HorizontalAlignment="Left" Height="19" Margin="471,263,0,0" TextWrapping="Wrap" Text="Date of Birth" VerticalAlignment="Top" Width="185" FontStyle="Italic"/>
+        <RadioButton x:Name="rbFullTime" Content="Full Time" HorizontalAlignment="Left" Margin="19,17,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <RadioButton x:Name="rbPartTime" Content="Part Time" HorizontalAlignment="Left" Margin="105,17,0,0" VerticalAlignment="Top" Checked="rbPartTime_Checked" FontWeight="Bold"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="703,151,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="703,201,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="703,176,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="703,226,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
