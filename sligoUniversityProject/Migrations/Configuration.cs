@@ -10,7 +10,6 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "sligoUniversityProject.PeopleData";
         }
 
         protected override void Seed(sligoUniversityProject.PeopleData context)

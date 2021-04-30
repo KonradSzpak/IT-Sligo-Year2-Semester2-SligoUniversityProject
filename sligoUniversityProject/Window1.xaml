@@ -5,29 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sligoUniversityProject"
         mc:Ignorable="d"
-        Title="Window1" Height="400" Width="300">
-    <Grid>
-        <TextBox x:Name="tbFName" HorizontalAlignment="Left" Height="22" Margin="126,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbLName" HorizontalAlignment="Left" Height="22" Margin="126,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbDBO" HorizontalAlignment="Left" Height="22" Margin="126,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbMName" HorizontalAlignment="Left" Height="22" Margin="126,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Height="24" Margin="126,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbPhone" HorizontalAlignment="Left" Height="24" Margin="126,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbID" HorizontalAlignment="Left" Height="24" Margin="126,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="126,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbPersonType" HorizontalAlignment="Left" Height="24" Margin="126,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="24" Margin="126,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="88,320,0,0" VerticalAlignment="Top" Width="76"/>
-        <TextBlock HorizontalAlignment="Left" Margin="36,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Date Of Birth"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="36,71,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="36,43,0,0" TextWrapping="Wrap" Text="Middle Name" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="36,15,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="36,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="ID"/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="36,185,0,0" TextWrapping="Wrap" Text="Person Type" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="36,157,0,0" TextWrapping="Wrap" Text="Phone" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="36,127,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" RenderTransformOrigin="0.71,0.094"/>
-        <TextBlock HorizontalAlignment="Left" Margin="36,269,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="36,241,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        Title="Add Person" Height="500" Width="500" Icon="4VIrf0_X_400x400.jpg">
+    <Grid Background="#80bd00">
+        <TextBox x:Name="tbFName" HorizontalAlignment="Left" Height="22" Margin="110,7,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbLName" HorizontalAlignment="Left" Height="22" Margin="110,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbDBO" HorizontalAlignment="Left" Height="22" Margin="110,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbMName" HorizontalAlignment="Left" Height="22" Margin="110,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Height="24" Margin="110,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbPhone" HorizontalAlignment="Left" Height="24" Margin="110,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="78,339,0,0" VerticalAlignment="Top" Width="76" Click="btnAdd_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Date Of Birth"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,64,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,36,0,0" TextWrapping="Wrap" Text="Middle Name" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,8,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,150,0,0" TextWrapping="Wrap" Text="Phone" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,120,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" RenderTransformOrigin="0.71,0.094"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,271,0,0" TextWrapping="Wrap" Text="Time" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbTeacher" Content="Teacher" HorizontalAlignment="Left" Margin="100,192,0,0" VerticalAlignment="Top" GroupName="2"/>
+        <RadioButton x:Name="rbStudent" Content="Student" HorizontalAlignment="Left" Margin="100,212,0,0" VerticalAlignment="Top" GroupName="2"/>
+        <RadioButton x:Name="rbAdmin" Content="Administrator" HorizontalAlignment="Left" Margin="100,232,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.769,3.267" GroupName="2"/>
+
+        <RadioButton x:Name="rbFullTime" Content="Full Time" HorizontalAlignment="Left" Margin="100,272,0,0" VerticalAlignment="Top" GroupName="1"/>
+        <RadioButton x:Name="rbPartTime" Content="Part Time" HorizontalAlignment="Left" Margin="100,290,0,0" VerticalAlignment="Top" GroupName="1"/>
+        <RadioButton x:Name="rbOnline" Content="Online" HorizontalAlignment="Left" Margin="100,310,0,0" VerticalAlignment="Top" GroupName="1"/>
+
+
 
     </Grid>
 </Window>
